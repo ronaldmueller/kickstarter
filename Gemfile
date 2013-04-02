@@ -35,3 +35,40 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# Infopark Kickstart
+gem 'infopark_rails_connector'
+gem 'infopark_cloud_connector'
+group :assets do
+  gem('therubyracer', require: 'v8')
+end
+
+group :development do
+  gem 'infopark_kickstarter'
+end
+
+
+gem "active_attr"
+gem "simple_form"
+group :test, :development do
+  gem "pry-rails"
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+group :test, :development do
+  gem "rspec-rails"
+end
+
+group :test, :development do
+end
+
+group :test, :development do
+end
+
+gem "haml-rails"
+group :assets do
+  gem "less-rails-bootstrap"
+end
+
+gem "cells"

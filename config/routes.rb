@@ -1,4 +1,6 @@
 Kickstart::Application.routes.draw do
+  match ':id/login' => 'login_page#index', as: 'login_page'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
